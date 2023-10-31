@@ -9,6 +9,7 @@
 class HashCode {
 public:
     //polynomial hash code
+    //'a' can be changed to see the difference in collision
     int operator() (const std::string& s, const int a = 37) {
         unsigned int h = 0;
         int k = s.size();
